@@ -1,0 +1,16 @@
+.nav-link {
+    font-size: 1.2rem;
+    color: rgb(45, 45, 45) !important;
+    margin-right: 80px;
+  }
+  
+  .nav-link:hover {
+    color: #37407a !important;
+  }
+  
+  .active-link {
+    border-bottom: 3px solid #37407a !important;
+  }
+  .navbar .nav-item .dropdown-menu a:last-child {
+    background-color: red;
+  }
