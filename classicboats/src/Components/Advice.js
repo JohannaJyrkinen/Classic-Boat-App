@@ -7,15 +7,15 @@ const Advice = ({temperature, humidity}) => {
     if(month >=7 && month<= 10) {
         return (
             <div>
-                <p>Onhan vene jo vesillä?</p>
+                <p className="mb-1">Onhan vene jo vesillä?</p>
             </div>
         )
     }
     
     if(temperature <= 5 || humidity > 70) {
         return (
-            <div style={{ color: "red" }}>
-                <p>Nyt ei kannata avata lakkapurkkia!</p>
+            <div>
+                <p className="mb-1"style={{ color: "red" }}>Nyt ei kannata avata lakkapurkkia!</p>
             </div>
         )
     }
@@ -24,8 +24,8 @@ const Advice = ({temperature, humidity}) => {
 
             <div>
                 <br />
-                <p>Nyt voi tarttua lakkapensseliin,  </p>
-                <p>lämpötila ja ilmankosteus ovat sopivat!</p>
+                <p className="mb-1" >Nyt voi tarttua lakkapensseliin,  </p>
+                <p className="mb-1" >lämpötila ja ilmankosteus ovat sopivat!</p>
             </div>
         )
     } 

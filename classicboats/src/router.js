@@ -1,6 +1,6 @@
 import React from "react"
 import { createBrowserRouter } from "react-router-dom"
-import { FrontPage } from "./pages/FrontPage"
+import { AllClasses } from "./pages/AllClasses"
 import { Repairtips } from "./pages/RepairTips"
 import { OneTypeClasses } from "./pages/OneTypeClasses"
 import { ConstructionClasses } from "./pages/ConstructionClasses"
@@ -9,7 +9,7 @@ import { MetreClasses } from "./pages/MetreClasses"
 export const router = createBrowserRouter([
     {
         path: "/",
-        element: <FrontPage/>,
+        element: <AllClasses/>,
     },
     {
         path: "/yksityyppiluokat",

@@ -2,7 +2,7 @@ import React from "react"
 import Weather from '../Components/Weather';
 import { useState } from 'react'
 import Navigationbar from "../Components/NavigationBar"
-import { Col, Row} from "react-bootstrap"
+
 
 export function Repairtips() {
 
@@ -20,15 +20,21 @@ export function Repairtips() {
         <div>
             <Navigationbar/>
             <br/>
-                <Row>
-                    <Col xs lg="3">
-                        <Weather lat={userLatitude} long= {userLongitude} />
-                    </Col>
-                    <Col >
-                        <header>
-                            <h3>Puuveneen kunnostus</h3>
-                        </header></Col> 
-                </Row>
+            <div>
+        <div className="container py-2">
+          <div style={{ marginTop: "10px", marginBottom: "10px" }}>
+            <div className="col-lg8 mx-auto">
+             
+            </div>
+          </div>
+        </div>
+  
+        <div className="container">
+          <div className="row text-center"><Weather lat={userLatitude} long= {userLongitude} /></div>
+        </div>
+        </div>
+                   
+                       
         </div>
     )
 

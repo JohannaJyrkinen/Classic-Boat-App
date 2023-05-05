@@ -1,5 +1,5 @@
 import React from "react"
-import { Container, Nav, Navbar, NavbarBrand, NavDropdown } from "react-bootstrap"
+import { Container, Nav, Navbar, NavbarBrand } from "react-bootstrap"
 import "./NavigationBar.css"
 import logo from "../images/1297487.svg"
 
@@ -10,7 +10,7 @@ return (
     <Navbar bg="light" expand="lg">
       
         <NavbarBrand style={{ fontSize: "1.75rem" }}>
-            <img src={logo} width="40" className="d-inline-block align-center mx-4" />
+            <img src={logo} width="40" className="d-inline-block align-center mx-4" alt="Boat icon"/>
             Veneklassikot
             </NavbarBrand>
         <Navbar.Toggle aria-controls="basic-navbar-nav"/>

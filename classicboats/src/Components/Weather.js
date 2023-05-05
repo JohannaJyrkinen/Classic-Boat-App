@@ -30,16 +30,18 @@ const Weather = ({lat, long}) => {
 
 
     return (
-        <div>
-        <h3>Sää nyt</h3>
-        <br/>
-        <p>lämpötila {weather.main.temp} astetta</p>
-        <img src={iconUrl} alt="Weather icon"></img>
-        <p>Tuulen nopeus {weather.wind.speed} m/s</p>
-        <p>Suhteellinen ilmankosteus {weather.main.humidity} %</p>
-        <Advice temperature={weather.main.temp} humidity={weather.main.humidity}/>
-        </div>
-        
+
+        <div className="col-xl-3 col-sm6 mb-5" style={{textAlign:"center"}}>
+        <div className="bg-white rounded shadow-sm py-5 px-4"  style={{ height: "100%" }}>
+          <h5 className="otsikko">Sää nyt</h5>
+          <img src={iconUrl} alt="Weather icon"></img>
+          <p className="mb-1">Lämpötila {weather.main.temp} astetta</p>
+          <p className="mb-1">Tuulen nopeus {weather.wind.speed} m/s</p>
+          <p className="mb-1">Suhteellinen ilmankosteus {weather.main.humidity} %</p>
+          <br/>
+          <Advice temperature={weather.main.temp} humidity={weather.main.humidity}/>
+            </div>
+            </div>
     )
 }
 
