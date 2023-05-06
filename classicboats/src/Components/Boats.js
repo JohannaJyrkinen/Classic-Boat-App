@@ -1,8 +1,8 @@
-import React, { useEffect, useState } from "react";
+import React from "react"
 import { Boat } from "./Boat"
-export function Boats() {
+export function Boats ({boat}) {
 
-    const boats= <Boat/>
+    const boats= <Boat boat={boat}/>
     /*<input
     type="text"
     value={filter}
@@ -12,20 +12,9 @@ export function Boats() {
   />*/
 
     return(
-        <div>
-        <div className="container py-2">
-          <div style={{ marginTop: "10px", marginBottom: "10px" }}>
-            <div className="col-lg8 mx-auto">
-             
-            </div>
-          </div>
-        </div>
-  
-      
-        <div className="container">
-          <div className="row text-center">{boats}</div>
-        </div>
-        </div>
+        
+        <>{boats}</>
+        
     )
 
 }

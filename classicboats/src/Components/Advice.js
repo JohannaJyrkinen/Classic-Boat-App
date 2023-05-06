@@ -12,10 +12,10 @@ const Advice = ({temperature, humidity}) => {
         )
     }
     
-    if(temperature <= 5 || humidity > 70) {
+    if(temperature <= 10 || humidity > 70) {
         return (
             <div>
-                <p className="mb-1"style={{ color: "red" }}>Nyt ei kannata avata lakkapurkkia!</p>
+                <p className="mb-1"style={{ color: "red" }}>Nyt ei kannata avata lakkapurkkia, sääolosuhteet eivät ole suotuisat!</p>
             </div>
         )
     }

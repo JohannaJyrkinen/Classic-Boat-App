@@ -1,15 +1,39 @@
 import React from "react"
 import Navigationbar from "../Components/NavigationBar"
-import { Boats } from "../Components/Boats"
+import { Boat } from "../Components/Boat"
+import { useSelector } from 'react-redux';
 
 export function AllClasses() {
+
+    let boats = useSelector(state => state.boats.boats)
+    console.log(boats)
+
+    const sailingBoats = boats.map((boat)=> <Boat key={boat.id} boat={boat}/>)
+
+
+
     return(
         <div>
             <Navigationbar/>
             <header>
-                <h3>Kaikki luokat</h3>
+                <h1 className="display-4" style={{ marginTop: "10px", marginBottom: "10px" }}>Klassiset purjeveneluokat</h1>
             </header>
-            <Boats/>
+            <div className="container py-2">
+        <div style={{ marginTop: "10px", marginBottom: "10px" }}>
+          <div className="col-lg8 mx-auto">
+          <p className="lead">Klassiset purjevene-luokat kuvastavat aikakautensa tyypillistä rakennustapaa sekä venesuunnittelun tyylisuuntaa.</p>
+          </div>
+        </div>
+      </div>
+        
+        <div className="container">
+            <div className="row text-center">
+                    {sailingBoats}
+            </div>
+        </div>
+        <footer style={{ marginTop: "10px", marginBottom: "10px" }}>
+           Kuvat Wikimedia Commons, lisenssillä CC BY-SA 3.0
+        </footer>
         </div>
     )
 }

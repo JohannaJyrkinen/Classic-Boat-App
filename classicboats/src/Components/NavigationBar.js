@@ -18,7 +18,7 @@ return (
         <Container>
         <Nav className="mx-auto justify-content-center">
             <Nav.Link href="/">
-                Kaikki venetyypit
+                Kaikki luokat
             </Nav.Link>
             <Nav.Link href="/yksityyppiluokat">
                 Yksityyppiluokat
@@ -26,11 +26,11 @@ return (
             <Nav.Link href="/konstruktioluokat">
                 Konstruktioluokat
             </Nav.Link>
-            <Nav.Link href="/metriluokat">
-                Metriluokat
+            <Nav.Link href="/sk">
+                Saaristoristeilijät
             </Nav.Link>
-            <Nav.Link href="/kunnostus">
-                Kunnostusvinkkejä
+            <Nav.Link href="/kevathuolto">
+                Keväthuolto
             </Nav.Link>
         </Nav>
         </Container>

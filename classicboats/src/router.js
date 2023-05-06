@@ -4,7 +4,7 @@ import { AllClasses } from "./pages/AllClasses"
 import { Repairtips } from "./pages/RepairTips"
 import { OneTypeClasses } from "./pages/OneTypeClasses"
 import { ConstructionClasses } from "./pages/ConstructionClasses"
-import { MetreClasses } from "./pages/MetreClasses"
+import { SkerryBoats } from "./pages/SkerryBoats"
 
 export const router = createBrowserRouter([
     {
@@ -16,7 +16,7 @@ export const router = createBrowserRouter([
         element: <OneTypeClasses/>,
     },
     {
-        path: "/kunnostus",
+        path: "/kevathuolto",
         element: <Repairtips />,
     },
     {
@@ -24,7 +24,7 @@ export const router = createBrowserRouter([
         element: <ConstructionClasses/>
     },
     {
-        path: "/metriluokat",
-        element: <MetreClasses/>
+        path: "/sk",
+        element: <SkerryBoats/>
     }
 ])
