@@ -12,9 +12,11 @@ In this project, I wanted to experiment with using both open REST API and MongoD
 
 * MongoDB
 * Node.js
-* Axios
+* Mongoose
+* Express
 * React
 * Redux
+* Axios
 * JavaScript
 * Bootstrap 5
 
