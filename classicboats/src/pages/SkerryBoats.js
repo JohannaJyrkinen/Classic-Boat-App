@@ -16,13 +16,13 @@ export function SkerryBoats() {
         <div>
             <Navigationbar/>
             <header>
-                <h1 className="display-4" style={{ marginTop: "10px", marginBottom: "10px" }}>Saaristoristeilijät</h1>
+                <h1 className="display-6" style={{ marginTop: "80px" }}>Saaristoristeilijät</h1>
             </header>
 
             <div className="container py-2">
-        <div style={{ marginTop: "10px", marginBottom: "10px" }}>
+        <div style={{ marginBottom: "10px" }}>
           <div className="col-lg8 mx-auto">
-          <p className="lead">Saaristoristeilijät ovat rakennettu perustuen Svenska Seglarförbundetin vuonna 1908 vahvistamaan saaristoristeilijäsääntöön. Säännön oli tarkoitus täydentää R-mittasääntöä, 
+          <p className="lead" style={{ fontSize: "1rem" }}>Saaristoristeilijät ovat rakennettu perustuen Svenska Seglarförbundetin vuonna 1908 vahvistamaan saaristoristeilijäsääntöön. Säännön oli tarkoitus täydentää R-mittasääntöä, 
           jota monet purjehtijat eivät pitäneet sopivaksi Pohjoismaiden saaristo-olosuhteisiin.
           Saaristoristeilijän luokka määräytyy pääsääntöisesti purjepinta-alan mukaan, 
           lisäksi luokissa on muutamia vähimmäismittoja.Veneet ovat tyypillisesti pitkiä ja kapeita.</p>

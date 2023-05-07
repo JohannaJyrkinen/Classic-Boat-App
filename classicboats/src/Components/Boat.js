@@ -6,15 +6,15 @@ export function Boat ({boat}) {
   
     return (
 
-        <div className="col-xl-3 col-sm6 mb-5" style={{textAlign:"center"}}>
-        <div className="bg-white rounded shadow-sm py-5 px-4"  style={{ height: "100%" }}>
+        <div className="col-xl-3 col-sm6 mb-4" style={{textAlign:"center"}}>
+        <div className="bg-white rounded shadow-sm py-5 px-3"  style={{ height: "100%", fontSize: "14px" }}>
          <img 
           src={boat.imgurl}
           style={{height: "20vw", objectFit: "contain", marginBottom: "10px"}}
           alt="boat"/>
           <h5 className="otsikko">{boat.name}</h5>
           <p></p>
-          <p className="mb-1">{boat.description}</p>
+          <p className="mb-3">{boat.description}</p>
           <p></p>
           <p className="small text-uppercase text-muted">Pituus {boat.loa}</p>
           <p className="small text-uppercase text-muted">Leveys {boat.beam}</p>

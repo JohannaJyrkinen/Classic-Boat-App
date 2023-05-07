@@ -16,12 +16,12 @@ export function AllClasses() {
         <div>
             <Navigationbar/>
             <header>
-                <h1 className="display-4" style={{ marginTop: "10px", marginBottom: "10px" }}>Klassiset purjeveneluokat</h1>
+                <h1 className="display-6" style={{ marginTop: "80px"}}>Klassiset purjeveneluokat</h1>
             </header>
             <div className="container py-2">
-        <div style={{ marginTop: "10px", marginBottom: "10px" }}>
+        <div style={{ marginBottom: "10px" }}>
           <div className="col-lg8 mx-auto">
-          <p className="lead">Klassiset purjevene-luokat kuvastavat aikakautensa tyypillistä rakennustapaa sekä venesuunnittelun tyylisuuntaa.</p>
+          <p className="lead" style={{ fontSize: "1rem" }}>Klassiset purjeveneluokat kuvastavat aikakautensa tyypillistä rakennustapaa sekä venesuunnittelun tyylisuuntaa.</p>
           </div>
         </div>
       </div>

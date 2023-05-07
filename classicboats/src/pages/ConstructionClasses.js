@@ -1,6 +1,6 @@
 import React from "react"
 import Navigationbar from "../Components/NavigationBar"
-import { Boats } from "../Components/Boats"
+import { Boat } from "../Components/Boat"
 import { useSelector } from 'react-redux';
 
 
@@ -11,18 +11,18 @@ export function ConstructionClasses() {
 
     const constructionClasses = boats
         .filter(boat => boat.type === "Construction")
-        .map((boat)=> <Boats key={boat.id} boat={boat}/>)
+        .map((boat)=> <Boat key={boat.id} boat={boat}/>)
 
     return(
         <div>
             <Navigationbar/>
             <header>
-            <h1 className="display-4" style={{ marginTop: "10px", marginBottom: "10px" }}>Konstruktioluokat</h1>
+                <h1 className="display-6" style={{ marginTop: "80px" }}>Konstruktioluokat</h1>
             </header>
             <div className="container py-2">
-        <div style={{ marginTop: "10px", marginBottom: "10px" }}>
+        <div style={{ marginBottom: "10px" }}>
           <div className="col-lg8 mx-auto">
-          <p className="lead">Konstruktioluokissa kilpapurjeveneet suunniteltiin luokkasääntöjen mukaan, 
+          <p className="lead" style={{ fontSize: "1rem" }}>Konstruktioluokissa kilpapurjeveneet suunniteltiin luokkasääntöjen mukaan, 
           joissa lasketaan veneiden mittoihin ja purjepinta-alaan perustuva mittaluku. 
           Nopein vene voittaa, eikä tasoituslukuja käytetä tulosten laskemiseen. 
           Konstruktioluokissa myös veneiden suunnittelu oli tärkeä osa kilpailua. 

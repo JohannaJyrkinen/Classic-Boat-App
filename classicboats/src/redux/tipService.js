@@ -5,7 +5,7 @@ import { setTips } from "./tipSlice";
 export const TipService= {
     
     getTips: () => {
-        const baseUrl = 'http://localhost:3001/api/tips';
+        const baseUrl = '/api/tips';
     
         axios.get(baseUrl)
           .then(response => {

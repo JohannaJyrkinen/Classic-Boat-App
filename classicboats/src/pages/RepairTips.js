@@ -21,19 +21,18 @@ export function Repairtips() {
 
     const tips = repairTips.map((tip) => <Repair key={tip.id} tip={tip}/>)
 
-    //<Weather lat={userLatitude} long= {userLongitude} />
 
     return(
         <div>
             <Navigationbar/>
             <header>
-            <h1 className="display-4" style={{ marginTop: "10px", marginBottom: "10px" }}>Kevätkunnostus</h1>
+            <h1 className="display-6" style={{ marginTop: "80px" }}>Kevätkunnostus</h1>
             </header>
             <div>
         <div className="container py-2">
-          <div style={{ marginTop: "10px", marginBottom: "10px" }}>
+          <div style={{ marginBottom: "10px" }}>
             <div className="col-lg8 mx-auto">
-            <p className="lead"> Puuveneen keväthuoltoon kuuluu pintakäsittelyjen huoltaminen. 
+            <p className="lead" style={{ fontSize: "1rem" }}> Puuveneen keväthuoltoon kuuluu pintakäsittelyjen huoltaminen. 
             Vene kannattaa laskea vesille hyvissä ajoin, ettei vene kuivu ja haristu. 
             Pienet vuodot heti vesillelaskun jälkeen ovat puuveneille ominaisia, 
             mutta hyväkuntoinen vene tiivistyy yleensä jo vesillelaskupäivänä.</p>

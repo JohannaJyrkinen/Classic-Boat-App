@@ -5,7 +5,7 @@ import { setBoats } from "./boatSlice";
 export const BoatService= {
     
     getBoats: () => {
-        const baseUrl = 'http://localhost:3001/api/boats';
+        const baseUrl = '/api/boats';
     
         axios.get(baseUrl)
           .then(response => {
